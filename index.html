@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RAKESH Weds MUSKAN - Wedding Invitation</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Great+Vibes&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #fdfbf7;
+            color: #4a3525;
+        }
+        .font-script {
+            font-family: 'Great Vibes', cursive;
+        }
+        .font-title {
+            font-family: 'Cinzel', serif;
+        }
+        .wedding-gradient {
+            background: linear-gradient(135deg, #fff5eb 0%, #ffe6d5 100%);
+        }
+        .card-border {
+            border: 2px solid #d4af37;
+            box-shadow: 0 10px 25px rgba(212, 175, 55, 0.2);
+        }
+    </style>
+</head>
+<body class="bg-[#fdfbf7] flex justify-center">
+
+    <!-- Mobile Screen Wrapper -->
+    <div class="w-full max-w-md bg-white min-h-screen shadow-2xl relative overflow-hidden flex flex-col justify-between">
+
+        <!-- Background Music Audio Element -->
+        <audio id="weddingSong" loop>
+            <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mp3">
+        </audio>
+
+        <!-- Floating Music Control Button -->
+        <button onclick="toggleMusic()" id="musicBtn" class="fixed bottom-6 right-6 z-50 bg-[#8b0000] text-white p-3 rounded-full shadow-lg hover:scale-105 transition">
+            <i id="musicIcon" class="fa-solid fa-music"></i>
+        </button>
+
+        <!-- Hero Section -->
+        <div class="relative w-full text-center py-12 px-6 wedding-gradient border-b-4 border-[#d4af37]">
+            <div class="absolute top-4 left-4 text-[#d4af37] text-xl">ॐ</div>
+            <div class="absolute top-4 right-4 text-[#d4af37] text-xl">ॐ</div>
+            
+            <p class="text-xs uppercase tracking-widest text-[#8b0000] font-semibold mb-2">With the blessings of our elders</p>
+            <h3 class="text-sm italic mb-4">Smt. Sunita & Shri Ramesh Sharma</h3>
+            <p class="text-xs text-gray-600 mb-6">Cordially invite you to celebrate the wedding of their beloved son</p>
+
+            <h1 class="font-script text-6xl text-[#8b0000] my-2">RAKESH</h1>
+            <span class="font-title text-xl text-[#d4af37]">&</span>
+            <h1 class="font-script text-6xl text-[#8b0000] my-2">MUSKAN</h1>
+
+            <div class="mt-6 inline-block card-border bg-white px-6 py-2 rounded-full">
+                <p class="font-title text-sm font-bold text-[#8b0000]">26 . NOV . 2026</p>
+            </div>
+        </div>
+
+        <!-- Details & Countdown Section -->
+        <div class="p-6 text-center space-y-8 flex-grow">
+            
+            <!-- Dates to Remember / Countdown -->
+            <div class="bg-[#fff9f0] p-6 rounded-2xl card-border">
+                <h2 class="font-title text-lg font-bold text-[#8b0000] mb-3">Countdown to Forever</h2>
+                <p class="text-xs text-gray-600 mb-4">Counting down to our big day!</p>
+                <div class="grid grid-cols-4 gap-2 text-[#8b0000]">
+                    <div class="bg-white p-2 rounded-lg shadow"><span id="days" class="text-lg font-bold block">00</span><span class="text-[10px]">Days</span></div>
+                    <div class="bg-white p-2 rounded-lg shadow"><span id="hours" class="text-lg font-bold block">00</span><span class="text-[10px]">Hours</span></div>
+                    <div class="bg-white p-2 rounded-lg shadow"><span id="minutes" class="text-lg font-bold block">00</span><span class="text-[10px]">Mins</span></div>
+                    <div class="bg-white p-2 rounded-lg shadow"><span id="seconds" class="text-lg font-bold block">00</span><span class="text-[10px]">Secs</span></div>
+                </div>
+            </div>
+
+            <!-- Events Schedule -->
+            <div class="space-y-4 text-left">
+                <h2 class="font-title text-center text-lg font-bold text-[#8b0000] mb-4">Wedding Events</h2>
+                
+                <div class="flex items-center space-x-4 bg-white p-4 rounded-xl border border-orange-200 shadow-sm">
+                    <div class="bg-[#8b0000] text-white p-3 rounded-lg text-center min-w-[60px]">
+                        <span class="block text-xs uppercase">Nov</span>
+                        <span class="block font-bold text-lg">25</span>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-[#8b0000]">Sangeet & Cocktail</h4>
+                        <p class="text-xs text-gray-600">JARWA , MAHENDARGARH , HARYANA</p>
+                        <p class="text-[11px] text-[#d4af37] font-semibold mt-1">7:00 PM Onwards</p>
+                    </div>
+                </div>
+
+                <div class="flex items-center space-x-4 bg-white p-4 rounded-xl border border-orange-200 shadow-sm">
+                    <div class="bg-[#8b0000] text-white p-3 rounded-lg text-center min-w-[60px]">
+                        <span class="block text-xs uppercase">NOV</span>
+                        <span class="block font-bold text-lg">23</span>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-[#8b0000]">Haldi & Mehendi</h4>
+                        <p class="text-xs text-gray-600">JARWA , MAHENDARGARH , HARYANA</p>
+                        <p class="text-[11px] text-[#d4af37] font-semibold mt-1">3:00 PM Onwards</p>
+                    </div>
+                </div>
+
+                <div class="flex items-center space-x-4 bg-white p-4 rounded-xl border border-orange-200 shadow-sm">
+                    <div class="bg-[#8b0000] text-white p-3 rounded-lg text-center min-w-[60px]">
+                        <span class="block text-xs uppercase">NOV</span>
+                        <span class="block font-bold text-lg">26</span>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-[#8b0000]">Wedding Ceremony</h4>
+                        <p class="text-xs text-gray-600">JARWA , MAHENDARGARH , HARYANA</p>
+                        <p class="text-[11px] text-[#d4af37] font-semibold mt-1">3:00 PM ROYAL MARRIAGE</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Hashtag Section -->
+            <div class="wedding-gradient p-4 rounded-xl text-center border border-[#d4af37]">
+                <p class="text-xs text-gray-600 mb-1">Use our official hashtag in your posts</p>
+                <h3 class="font-title font-bold text-[#8b0000] text-lg">#RAKESHWedsMUSKAN</h3>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="bg-[#8b0000] text-white text-center py-4 text-xs">
+            <p>We look forward to welcoming you!</p>
+            <p class="text-[10px] text-orange-200 mt-1">Crafted with ❤️ for RAKESH & MUSKAN</p>
+        </footer>
+
+    </div>
+
+    <!-- JavaScript for Music and Countdown -->
+    <script>
+        // Music Toggle
+        let isPlaying = false;
+        function toggleMusic() {
+            const song = document.getElementById('weddingSong');
+            const icon = document.getElementById('musicIcon');
+            if (isPlaying) {
+                song.pause();
+                icon.className = "fa-solid fa-music";
+                isPlaying = false;
+            } else {
+                song.play();
+                icon.className = "fa-solid fa-volume-high";
+                isPlaying = true;
+            }
+        }
+
+        // Countdown Timer
+        const weddingDate = new Date("Dec 2, 2026 18:00:00").getTime();
+        const timer = setInterval(() => {
+            const now = new Date().getTime();
+            const distance = weddingDate - now;
+
+            if (distance < 0) {
+                clearInterval(timer);
+                return;
+            }
+
+            document.getElementById("days").innerText = Math.floor(distance / (1000 * 60 * 60 * 24));
+            document.getElementById("hours").innerText = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            document.getElementById("minutes").innerText = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            document.getElementById("seconds").innerText = Math.floor((distance % (1000 * 60)) / 1000);
+        }, 1000);
+    </script>
+</body>
+</html>
